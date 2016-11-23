@@ -1,0 +1,6 @@
+## insert into .bashrc in remote machine 
+## to label any session as an ssh session
+ 
+if [ -n "$SSH_CLIENT" ]; then text=" ssh-session"
+fi
+export PS1='\[\e[0;31m\]\u@\h:\w${text}$\[\e[m\] '
