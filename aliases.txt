@@ -1,0 +1,1 @@
+alias ducks='du -cksh * | sort -hr | head -n 15'   # lists directory sizes in current directory
